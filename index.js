@@ -8,52 +8,44 @@ const licenses = ['MIT', 'Apache', 'BSD', 'None']
 
 // TODO: Create an array of questions for user input
 const questions = [
-  inquirer
-    .prompt([
       {
         type: 'input',
         message: 'What is your Github?',
-        name: 'username'
+        name: 'Username'
       },
       {
         type: 'input',
         message: "What is your email address?",
-        name: 'email'
+        name: 'Email'
       },
       {
         type: 'input',
         message: "What is your project's name?",
-        name: 'project-title'
+        name: 'Project-title'
       },
       {
         type: 'input',
         message: "Please write a short description of your project",
-        name: 'project-description'
+        name: 'Project-description'
       },
       {
         type: 'list',
         message: "What kind of license should your project have?",
-        name: 'license',
+        name: 'License',
         choices: licenses
       },
       {
         type: 'input',
         message: "What command should be run to install dependencies",
-        name: 'dependencies'
+        name: 'Dependencies'
       }
-    ])
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  const readMeFile = "README.md"
-    fs.writeFile(function (err) {
-      if(err) {
-        console.log(err)
-      } else {
-        console.log (readMeFile + ' was created')
-      }
-    })
+  fs.writeFile('README.md', '', (error, data) =>
+  error ? console.error(error) : console.log(data)
+);
 }
 
 // TODO: Create a function to initialize app
