@@ -21,18 +21,28 @@ const questions = [
       {
         type: 'input',
         message: "What is your project's name?",
-        name: 'Project-title'
+        name: 'title'
       },
       {
         type: 'input',
         message: "Please write a short description of your project",
-        name: 'Project-description'
+        name: 'description'
       },
       {
         type: 'list',
         message: "What kind of license should your project have?",
-        name: 'License',
+        name: 'license',
         choices: licenses
+      },
+      {
+        type: 'input',
+        message: 'How would you like to utilize this application?',
+        name: 'usage'
+      },
+      {
+        type: 'input',
+        message: 'How would you like to install this application?',
+        name: 'installation'
       },
       {
         type: 'input',
@@ -42,11 +52,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile('README.md', '', (error, data) =>
-  error ? console.error(error) : console.log(data)
-);
+function writeToFile(data) {
+fs.writeFile('README.md', data, (error) => {
+  if (error) throw error;
+    console.log('README generated!')
+})
 }
+
 
 // TODO: Create a function to initialize app
 function init() {
