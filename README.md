@@ -1,9 +1,9 @@
 
-  # jkasd;fjkasd
+  # README Generator
 
   ## Description
 
-  ajsdlkfjasdklf
+  This is a README generator for my projects
 
   ## Table of Contents
 
@@ -15,19 +15,18 @@
 
   ## Installation
   The following necessary dependencies must be installed to run the application: 
-  jasdlkfjalksdfjlk
+  N/A
 
 
   ## Usage
   Here is how I utilize this application:
-  asjdflasdjkfl;
+  This projects main purpose is to make it easier for users to generate quality README's
 
   ## License
   Here is a link of the license used:
   
-  MIT ![License Badge](https://shields.io/badge/license-MIT-yellow
+  MIT
 
-  https://opensource.org/MIT/bsd-1-clause/
 
   ## Contributing
   Here are some of the contributors of this project: 
@@ -40,6 +39,6 @@
 
   You can also email me at:
 
-  jsdklfajsdlkf
+  test@ymail.com
 
   
